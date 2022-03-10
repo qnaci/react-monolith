@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 
 export default function Todos() {
   const [todos, setTodos] = useState([]); // initializer variable
@@ -12,7 +13,7 @@ export default function Todos() {
   }, [count]);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/v1/todos`)
+    fetch(`https://jsonplaceholder.typicode.com/todos`)
       .then((response) => response.json())
       .then((data) => {
         // set loading palsu pke setTimeout
@@ -36,7 +37,7 @@ export default function Todos() {
     <>
       <div>
         <p>You clicked {count} times</p>
-        <button onClick={() => setCount(count + 1)}>Click me</button>
+        <Button onClick={() => setCount(count + 1)}>Click me</Button>
       </div>
       <div>
         <h3>todos</h3>
