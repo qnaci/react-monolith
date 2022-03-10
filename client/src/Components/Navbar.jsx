@@ -7,7 +7,7 @@ export default function Navbar() {
       <Link to='/'>Home</Link>
       <Link to='/tentang'>Tentang</Link>
       <Link to='/produk'>Produk</Link>
-      <Link to='/todo'>Todo</Link>
+      <Link to='/todos'>Todo</Link>
     </nav>
   );
 }

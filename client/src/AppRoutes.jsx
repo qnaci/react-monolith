@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Produk from './Pages/Produk';
 import Tentang from './Pages/Tentang';
+import Todos from './Pages/Todos';
 
 export default function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ export default function AppRoutes() {
         <Route path='/' element={<Home />} />
         <Route path='/produk' element={<Produk />} />
         <Route path='/tentang' element={<Tentang />} />
+        <Route path='/todos' element={<Todos />} />
       </Routes>
     </>
   );

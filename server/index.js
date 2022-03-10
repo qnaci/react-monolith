@@ -2,11 +2,13 @@ const express = require('express')
 const app = express();
 const PORT = process.env.PORT || 8080
 const path = require('path')
+const cors = require('cors')
 const { todoRouter } = require('./routes/todoRouter')
 const { todoRouterV2 } = require('./routes/v2/todoRouter.v2')
 const userRouter = require('./routes/userRouter')
 
 // middlewares
+app.use(cors())
 app.use(express.urlencoded({ extended: true })) // parser x-www-urlencoded
 app.use(express.json()) // parsing data dari req json()
 
