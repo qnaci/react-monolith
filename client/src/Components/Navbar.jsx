@@ -8,6 +8,7 @@ export default function Navbar() {
       <Link to='/tentang'>Tentang</Link>
       <Link to='/produk'>Produk</Link>
       <Link to='/todos'>Todo</Link>
+      <Link to="/biodata">Form Biodata</Link>
     </nav>
   );
 }
